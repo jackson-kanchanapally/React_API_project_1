@@ -43,19 +43,27 @@ export default class Api extends Component {
           </IconButton>
         </Flex>
         <Flex height="92vh " alignItems="center" justifyContent="center">
-          <Flex
+          {/* <Flex
             justifyContent="center"
             alignItems="center"
             borderRadius="15"
             color={this.props.formText}
             background={this.props.formBackground}
             p={12}
-          >
+          > */}
             {this.state.loading || !this.state.person ? (
               <div>
                 <img src={loading} />
               </div>
             ) : (
+              <Flex
+              justifyContent="center"
+              alignItems="center"
+              borderRadius="15"
+              color={this.props.formText}
+              background={this.props.formBackground}
+              p={12}
+            >
               <div>
                 <Heading fontSize="5xl" mb={7} align="center">
                   Profile
